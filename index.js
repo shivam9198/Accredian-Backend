@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-// const nodemailer = require("nodemailer");
 const referralRouter = require ('./routes/referralRoutes');
 
 dotenv.config();
@@ -9,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors( {  
-  origin : ["https://accredian-frontend-kappa-one.vercel.app/"], 
+  origin : "https://accredian-frontend-kappa-one.vercel.app/", 
     credentials : true ,
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],

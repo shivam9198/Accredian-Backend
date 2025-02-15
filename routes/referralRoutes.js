@@ -1,6 +1,5 @@
 const express = require("express");
 const referralRouter = express.Router();
-const profileRouter = express.Router();
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 const nodemailer = require("nodemailer");
