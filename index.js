@@ -16,6 +16,9 @@ app.use(cors( {
 }));
 
 app.use('/', referralRouter);
+app.get('/', (req, res) => {
+  res.send('Server is running!');
+});
 
 // Test Route
 const PORT = process.env.PORT || 5002;
