@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors( {  
-  origin : ["http://localhost:5173","https://accredian-frontend-sigma.vercel.app"], 
+  origin : ["http://localhost:5173","https://accredian-backend-6au9.onrender.com/api/referrals"], 
     credentials : true ,
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
