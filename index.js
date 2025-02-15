@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors( {  
-  origin: "*", // Allows all origins (for testing)
+  origin : "http://localhost:5173", // Allows all origins (for testing)
     credentials : true ,
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
