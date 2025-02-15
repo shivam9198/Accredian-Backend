@@ -15,7 +15,7 @@ app.use(cors( {
     allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
-app.use('/', referralRouter);
+app.use('/api', referralRouter);
 app.get('/', (req, res) => {
   res.send('Server is running!');
 });
