@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors( {  
-  origin : ["http://localhost:5173","https://accredian-frontend-kappa-one.vercel.app/"], 
+  origin : ["https://accredian-frontend-kappa-one.vercel.app/"], 
     credentials : true ,
     methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
